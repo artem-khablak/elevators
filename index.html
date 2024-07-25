@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container mx-auto">
+    <h1 class="text-3xl font-bold underline mb-5 text-center">
+        Elevator Schedule
+    </h1>
+
+    <div class="column-1 relative">
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">9th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">8th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">7th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">6th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">5th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">4th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">3th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">2th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">1th</div>
+        </div>
+        <div class="lift">
+            <div class="flex justify-end font-bold mr-2">GF</div>
+        </div>
+    </div>
+    <div class="column-1 relative">
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift">
+        </div>
+        <div class="elevator" id="rectangle1">
+            <img src="./images/elevator.svg" width="25" height="25" title="Click for select" alt="">
+        </div>
+    </div>
+    <div class="column-1 relative">
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="elevator" id="rectangle2">
+            <img src="./images/elevator.svg" width="25" height="25" title="Click for select" alt="">
+        </div>
+    </div>
+    <div class="column-1 relative">
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="elevator" id="rectangle3">
+            <img src="./images/elevator.svg" width="25" height="25" title="Click for select" alt="">
+        </div>
+
+    </div>
+    <div class="column-1 relative">
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="elevator" id="rectangle4">
+            <img src="./images/elevator.svg" width="25" height="25" title="Click for select" alt="">
+        </div>
+
+    </div>
+    <div class="column-1 relative">
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="border lift"></div>
+        <div class="elevator" id="rectangle5">
+            <img src="./images/elevator.svg" width="25" height="25" title="Click for select" alt="">
+        </div>
+
+    </div>
+    <div class="column-1">
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn9" onClick="selectElevator(9, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn8" onClick="selectElevator(8, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn7" onClick="selectElevator(7, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn6" onClick="selectElevator(6, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn5" onClick="selectElevator(5, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn4" onClick="selectElevator(4, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn3" onClick="selectElevator(3, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn2" onClick="selectElevator(2, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn1" onClick="selectElevator(1, this)">Call</button>
+            </div>
+        </div>
+        <div class="lift ml-2">
+            <div class="lift-btn">
+                <button class="btn btn-call" id="btn0" onClick="selectElevator(0, this)">Call</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const audio = new Audio("test.mp3");
+    const distance = 55;
+    const intervals = [];
+    let intervalIndex = 0;
+
+    const elevatorsNew = [
+        { currentFloor: 1, position: 60, moveOn: 'top', que: [], isBizy: 0, elId: 'rectangle1', nIntervId: null },
+        { currentFloor: 0, position: 5, moveOn: 'top', que: [], isBizy: 0, elId: 'rectangle2', nIntervId: null },
+        { currentFloor: 0, position: 5, moveOn: 'top', que: [], isBizy: 0, elId: 'rectangle3', nIntervId: null },
+        { currentFloor: 0, position: 5, moveOn: 'top', que: [], isBizy: 0, elId: 'rectangle4', nIntervId: null },
+        { currentFloor: 8, position: 445, moveOn: 'top', que: [], isBizy: 0, elId: 'rectangle5', nIntervId: null }
+    ]
+
+    const moveElevator = (elevator, floorTo, invIndex) => {
+        document.getElementById(elevator.elId).getElementsByTagName('img')[0].setAttribute('src', './images/elevator-red.svg');
+        if (elevator.currentFloor > floorTo) {
+            elevator.currentFloor--;
+            document.getElementById(elevator.elId).style['bottom'] = (parseFloat(elevator.position) - distance)+'px';
+            elevator.position = parseFloat(elevator.position) - distance;
+
+        } else if (elevator.currentFloor < floorTo) {
+            elevator.currentFloor++;
+            document.getElementById(elevator.elId).style['bottom'] = (parseFloat(elevator.position) + distance)+'px'
+            elevator.position = parseFloat(elevator.position) + distance;
+        }
+        if (elevator.currentFloor === floorTo) {
+            audio.play();
+            document.getElementById(elevator.elId).getElementsByTagName('img')[0].setAttribute('src', './images/elevator-green.svg');
+            document.getElementById(`btn${floorTo}`).innerHTML = 'Arrived';
+            document.getElementById(`btn${floorTo}`).classList.remove("btn-waiting");
+            document.getElementById(`btn${floorTo}`).classList.add("btn-arrived");
+            clearInterval(elevator.nIntervId);
+            setTimeout(() => {
+                document.getElementById(elevator.elId).getElementsByTagName('img')[0].setAttribute('src', './images/elevator.svg');
+                document.getElementById(`btn${floorTo}`).innerHTML = 'Call';
+                document.getElementById(`btn${floorTo}`).classList.remove("btn-arrived");
+                document.getElementById(`btn${floorTo}`).classList.add("btn-call");
+                elevator.isBizy = 0;
+            }, 2000);
+            intervals.splice(invIndex, 1);
+        }
+    }
+
+    const selectElevator = (floor, btnObj) => {
+        // find closest elevator
+        const positions = [];
+        for (let i = 0; i < elevatorsNew.length; i++) {
+            if (elevatorsNew[i].isBizy === 0) {
+                positions.push(elevatorsNew[i].currentFloor)
+            }
+        }
+        btnObj.innerHTML = 'Waiting';
+        btnObj.classList.remove("btn-call");
+        btnObj.classList.add("btn-waiting");
+
+        var closest = positions.reduce(function(prev, curr) {
+            return (Math.abs(curr - floor) < Math.abs(prev - floor) ? curr : prev);
+        });
+        const index = elevatorsNew.findIndex(x => parseInt(x.currentFloor) ===  closest);
+        const selectedElevator = elevatorsNew[index];
+        elevatorsNew[index].itvIndex = intervalIndex;
+        elevatorsNew[index].isBizy = 1;
+        elevatorsNew[index].nIntervId = setInterval(function() {
+            moveElevator(selectedElevator, floor, intervalIndex)
+        }, 2000);
+        intervalIndex++
+    }
+</script>
+</body>
+</html>
